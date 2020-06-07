@@ -66,7 +66,7 @@ class _LibraryPageState extends State<LibraryPage> {
                           Padding(
                             padding: const EdgeInsets.only(right: 25),
                             child: Text(
-                              "Músicas",
+                              "Music",
                               style: TextStyle(
                                   fontSize: 30,
                                   fontWeight: FontWeight.w800,
@@ -99,7 +99,7 @@ class _LibraryPageState extends State<LibraryPage> {
                       height: 33,
                       width: MediaQuery.of(context).size.width * (0.73),
                       buttomPadding: EdgeInsets.all(0),
-                      hintText: "Procure entre playlists",
+                      hintText: "Find in playlists",
                       hintTextStyle:
                           TextStyle(fontSize: 14, color: Colors.white54),
                       havePrefix: true,
@@ -113,7 +113,7 @@ class _LibraryPageState extends State<LibraryPage> {
                           color: Color(0xff222326),
                           onPressed: () {},
                           child: Text(
-                            "Filtros",
+                            "Filters",
                             style:
                                 TextStyle(fontSize: 14, color: Colors.white54),
                           ),

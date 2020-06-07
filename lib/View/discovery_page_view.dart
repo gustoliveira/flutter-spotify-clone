@@ -45,7 +45,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Text("Buscar",
+                          Text("Search",
                               style: TextStyle(
                                   fontSize: 45,
                                   color: Colors.white,
@@ -56,7 +56,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                     CustomTextFieldFlatButtom(
                       width: MediaQuery.of(context).size.width * (0.83),
                       buttomPadding: EdgeInsets.only(top: 15),
-                      hintText: "Artistas, músicas ou podcasts",
+                      hintText: "Artists, songs, or podcasts",
                       hintTextStyle: TextStyle(
                           color: Colors.black87,
                           fontWeight: FontWeight.w700,
@@ -77,7 +77,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            "Seus gêneros favoritos",
+                            "Your favorite genres",
                             style: TextStyle(
                                 fontWeight: FontWeight.w800,
                                 fontSize: 15,

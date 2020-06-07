@@ -32,22 +32,22 @@ class BottomNavigationBarCustom extends StatelessWidget {
                         leftPadding: 34,
                         rightPadding: 0,
                         icon: Foundation.home,
-                        title: "Início",
-                        isSelected: title == "Início")),
+                        title: "Home",
+                        isSelected: title == "Home")),
                 Tab(
                     icon: TabBarIconCustom(
                         leftPadding: 14,
                         rightPadding: 14,
-                        title: "Buscar",
+                        title: "Search",
                         icon: AntDesign.search1,
-                        isSelected: title == "Buscar")),
+                        isSelected: title == "Search")),
                 Tab(
                   icon: TabBarIconCustom(
                       leftPadding: 0,
                       rightPadding: 23,
-                      title: "Sua Biblioteca",
+                      title: "Your Library",
                       icon: EvilIcons.navicon,
-                      isSelected: title == "Sua Biblioteca"),
+                      isSelected: title == "Your Library"),
                 ),
               ],
               indicatorColor: Colors.transparent,

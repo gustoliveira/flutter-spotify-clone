@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                             context: context,
                             builder: (context) {
                               return AlertDialog(
-                                content: Text("VAI PARA CONFIGURAÇÃO"),
+                                content: Text("SETTINGS"),
                               );
                             });
                       }, // Fazer ir para página de Configuração
@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Tocadas recentemente",
+                  "Recently played",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 25,
@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Novos lançamentos para você",
+                  "New releases for you",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 25,
@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Tocar novamente",
+                  "Jump back in",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 25,
@@ -129,7 +129,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Suas playlists",
+                  "Your playlists",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 25,

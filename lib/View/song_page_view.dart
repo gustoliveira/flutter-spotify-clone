@@ -58,7 +58,7 @@ class _SongPageState extends State<SongPage> {
                         child: Column(
                           children: <Widget>[
                             Text(
-                              "TOCANDO DA PLAYLIST",
+                              "PLAYING FROM PLAYLIST",
                               style: TextStyle(
                                 color: Colors.white70,
                                 fontWeight: FontWeight.w400,

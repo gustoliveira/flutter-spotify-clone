@@ -44,13 +44,13 @@ class Delegate extends SliverPersistentHeaderDelegate {
             borderColor: Colors.green,
           ),
           FlattButtonWithBottomBorder(
-            label: "Artistas",
+            label: "Artists",
             labelColor: Colors.white54,
             backgroundColor: backgroundColor,
             borderColor: Colors.transparent,
           ),
           FlattButtonWithBottomBorder(
-            label: "Álbuns",
+            label: "Albums",
             labelColor: Colors.white54,
             backgroundColor: backgroundColor,
             borderColor: Colors.transparent,
