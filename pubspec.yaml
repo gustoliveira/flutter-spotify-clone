@@ -19,7 +19,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  flutter_launcher_icons: ^0.7.5
 
 flutter:
   uses-material-design: true
@@ -33,3 +33,8 @@ flutter:
     - images/theyre_the_same.jpeg
     - images/your-top-songs-2019_DEFAULT-en.jpg
     - images/EllaMai-EllaMai.jpeg
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "icon/icon.png"
