@@ -94,8 +94,8 @@ class _SongPageState extends State<SongPage> {
                   Expanded(
                     child: Center(
                       child: SizedBox(
-                        width: maxWidth * 0.85,
-                        height: maxHeight * 0.47,
+                        width: maxWidth * 0.8,
+                        height: maxWidth * 0.8,
                         child: Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
@@ -177,6 +177,10 @@ class _SongPageState extends State<SongPage> {
                       Expanded(
                         child: Column(
                           children: <Widget>[
+                            Container(
+                              color: Colors.transparent,
+                              width: maxWidth * .051,
+                            ),
                             Slider(
                               value: _value,
                               onChanged: (value) {
@@ -186,6 +190,29 @@ class _SongPageState extends State<SongPage> {
                               },
                               activeColor: Colors.white,
                               inactiveColor: Colors.grey,
+                            ),
+                            Row(
+                              children: <Widget>[
+                                Container(
+                                  color: Colors.transparent,
+                                  width: maxWidth * .051,
+                                ),
+                                Text(
+                                  "0:00",
+                                  style: TextStyle(color: Colors.white70),
+                                ),
+                                Expanded(
+                                  child: Container(),
+                                ),
+                                Text(
+                                  "3:04",
+                                  style: TextStyle(color: Colors.white70),
+                                ),
+                                Container(
+                                  color: Colors.transparent,
+                                  width: maxWidth * .051,
+                                ),
+                              ],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -260,7 +287,11 @@ class _SongPageState extends State<SongPage> {
                         width: maxWidth * .051,
                       ),
                     ],
-                  )
+                  ),
+                  Container(
+                    color: Colors.transparent,
+                    height: maxHeight * .04,
+                  ),
                 ],
               ),
             );
