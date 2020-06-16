@@ -127,6 +127,8 @@ class _LibraryPageState extends State<LibraryPage> {
                 SliverFixedExtentList(
                   itemExtent: 85,
                   delegate: SliverChildListDelegate([
+                    createPlaylistButton(),
+                    likedSongsButton(),
                     playlistRepresentationWidget(playlistList[0]),
                     playlistRepresentationWidget(playlistList[1]),
                     playlistRepresentationWidget(playlistList[2]),
@@ -186,6 +188,96 @@ class _LibraryPageState extends State<LibraryPage> {
                   ),
                   Text(
                     "de ${playlist.ownerName}",
+                    style: TextStyle(color: Colors.white54),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget createPlaylistButton() {
+    return GestureDetector(
+      child: Container(
+        padding: EdgeInsets.fromLTRB(15, 10, 0, 5),
+        child: Row(
+          children: <Widget>[
+            Container(
+              width: 70.0,
+              height: 70.0,
+              decoration: BoxDecoration(
+                shape: BoxShape.rectangle,
+                color: Color(0xff222326),
+              ),
+              child: Center(
+                child: Icon(
+                  Icons.add,
+                  color: Colors.white,
+                  size: 35,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    "Create playlist",
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget likedSongsButton() {
+    return GestureDetector(
+      child: Container(
+        padding: EdgeInsets.fromLTRB(15, 10, 0, 5),
+        child: Row(
+          children: <Widget>[
+            Container(
+              width: 70.0,
+              height: 70.0,
+              decoration: BoxDecoration(
+                shape: BoxShape.rectangle,
+                image: DecorationImage(
+                    image: AssetImage("images/liked_songs.png"),
+                    fit: BoxFit.fill),
+              ),
+              padding: EdgeInsets.only(right: 15),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    "Liked Songs",
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                  Divider(
+                    color: Colors.transparent,
+                    height: 2,
+                  ),
+                  Text(
+                    "1232 songs",
                     style: TextStyle(color: Colors.white54),
                   )
                 ],
