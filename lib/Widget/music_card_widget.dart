@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_clone/Model/music_model.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:spotify_clone/Model/track_model.dart';
+import 'package:spotify_clone/Model/artist_model.dart';
 
 class MusicCard extends StatelessWidget {
-  final MusicModel music = MusicModel(
-      name: "Sauce", artist: "Ella Mai", album: "Ella Mai", duration: 304);
+  final TrackModel music = TrackModel(
+    name: "Sauce",
+    artist: ArtistModel(name: "Ella Mai"),
+    album: "Ella Mai",
+    durationMs: 304,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +52,7 @@ class MusicCard extends StatelessWidget {
                         color: Colors.white54,
                       ),
                       Text(
-                        music.artist,
+                        music.artist.name,
                         style: TextStyle(
                             color: Colors.white54,
                             fontSize: 13,
